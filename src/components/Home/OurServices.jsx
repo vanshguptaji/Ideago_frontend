@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import livingRoom from "../assets/HomeImages/Ourservice.png";
-import commercialImg from "../assets/HomeImages/CommercialServices.png";
-import modularKitchenImg from "../assets/HomeImages/ModularKitchens.png";
-import spacePlanningImg from "../assets/HomeImages/SpacePlanning.png"; // add your image
-import turnkeyImg from "../assets/HomeImages/Turnkey.png"; // add your image
+import livingRoom from "../../assets/HomeImages/Ourservice.png";
+import commercialImg from "../../assets/HomeImages/CommercialServices.png";
+import modularKitchenImg from "../../assets/HomeImages/ModularKitchens.png";
+import spacePlanningImg from "../../assets/HomeImages/SpacePlanning.png"; // add your image
+import turnkeyImg from "../../assets/HomeImages/Turnkey.png"; // add your image
 
 const services = [
 	{

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import OurVisions from "../assets/HomeImages/image3.png";
-import Sketch from "../assets/HomeImages/sketchOurVision.svg";
+import OurVisions from "../../assets/HomeImages/image3.png";
+import Sketch from "../../assets/HomeImages/sketchOurVision.svg";
 
 const OurVision = () => {
   const [sliderValue, setSliderValue] = useState(50);

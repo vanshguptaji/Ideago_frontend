@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/HomeImages/Frame12.svg";
-import image2 from "../assets/HomeImages/Frame13.svg";
-import image3 from "../assets/HomeImages/Frame14.svg";
+import image1 from "../../assets/HomeImages/Frame12.svg";
+import image2 from "../../assets/HomeImages/Frame13.svg";
+import image3 from "../../assets/HomeImages/Frame14.svg";
 
 const projects = [
 	{

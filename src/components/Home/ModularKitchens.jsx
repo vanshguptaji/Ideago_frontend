@@ -1,5 +1,5 @@
 import React from "react";
-import kitchenImg from "../assets/HomeImages/kitchen.svg"; // Replace with your actual image path
+import kitchenImg from "../../assets/HomeImages/kitchen.svg"; // Replace with your actual image path
 
 const highlights = [
   "Custom Designs to Suit Your Space",
