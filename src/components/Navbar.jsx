@@ -67,12 +67,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a
-              href="#contact"
-              className="text-[#2d4661] hover:font-semibold"
+            <Link
+              to="/contactus"
+              className={`text-[#2d4661] ${
+                location.pathname === "/contactus"
+                  ? "font-bold border-b-2 border-[#2d4661] pb-0.5"
+                  : "hover:font-semibold"
+              }`}
             >
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
         {/* Social Icons */}
