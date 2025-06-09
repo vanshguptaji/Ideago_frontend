@@ -19,7 +19,6 @@ function Home() {
       <ModularKitchens />
       <WhyChoose />
       <Client />
-      <Footer />
     </div>
   )
 }

@@ -50,7 +50,7 @@ export default function Collage2() {
       </h2>
       <DraggableCardContainer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.map((project, idx) => (
-          <DraggableCardBody key={idx} className="p-0 bg-white/80 shadow-lg min-h-80 w-full max-w-xs">
+          <DraggableCardBody key={idx} className="p-8 bg-white/80 shadow-lg min-h-80 w-full max-w-xs">
             <div className="relative h-64 w-full overflow-hidden rounded-md">
               <img
                 src={project.image}

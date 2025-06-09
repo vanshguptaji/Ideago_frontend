@@ -18,7 +18,6 @@ function OurProjects() {
       <HeroSection />
       <Collage images={images} />
       <Collage2 />
-      <Footer />
     </div>
   )
 }

@@ -55,12 +55,16 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a
-              href="#about"
-              className="text-[#2d4661] hover:font-semibold"
+            <Link
+              to="/aboutus"
+              className={`text-[#2d4661] ${
+                location.pathname === "/aboutus"
+                  ? "font-bold border-b-2 border-[#2d4661] pb-0.5"
+                  : "hover:font-semibold"
+              }`}
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
             <a
