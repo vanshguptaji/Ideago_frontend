@@ -29,22 +29,25 @@ const features = [
 ];
 
 const WhyChoose = () => (
-	<section className="py-12 px-48 text-center bg-[#F4EFEB]">
-		<h2 className="text-3xl md:text-4xl font-serif mb-14 tracking-wide uppercase font-normal">
+	<section className="py-12 px-4 sm:px-8 md:px-24 lg:px-48 text-center bg-[#F4EFEB]">
+		<h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-10 md:mb-14 tracking-wide uppercase font-normal">
 			Why Choose Ideago Interiors?
 		</h2>
-		<div className="flex justify-center gap-x-24 gap-y-12">
+		<div className="flex flex-col gap-y-8 sm:gap-y-10 md:flex-row md:justify-center md:gap-x-24 md:gap-y-12">
 			{features.map((feature, idx) => (
-				<div className="flex flex-col items-center w-56" key={idx}>
+				<div
+					className="flex flex-col items-center w-full sm:w-72 md:w-56 max-w-xs mx-auto md:mx-0"
+					key={idx}
+				>
 					<div className="flex items-center justify-center mb-4">
 						<img
 							src={feature.img}
 							alt={feature.label}
-							className="w-32 h-32 object-contain"
+							className="w-24 h-24 md:w-32 md:h-32 object-contain"
 							draggable={false}
 						/>
 					</div>
-					<div className="text-[#2c3e50] font-medium text-lg font-sans tracking-wide">
+					<div className="text-[#2c3e50] font-medium text-base md:text-lg font-sans tracking-wide">
 						{feature.label}
 					</div>
 				</div>
