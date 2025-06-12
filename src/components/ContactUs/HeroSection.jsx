@@ -2,7 +2,7 @@ import React from "react";
 import heroBg from "../../assets/OurProjects/OurProject.png"; 
 
 const HeroSection = () => (
-  <section className="relative w-full h-[480px] md:h-[720px] flex items-start justify-center overflow-hidden">
+  <section className="relative w-full h-[480px] md:h-[720px] flex items-start justify-center overflow-hidden p-8">
     {/* Background Image */}
     <img
       src={heroBg}
