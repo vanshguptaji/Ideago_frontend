@@ -2,18 +2,19 @@ import React from "react";
 import image1 from "../../assets/HomeImages/Frame12.svg";
 import image2 from "../../assets/HomeImages/Frame13.svg";
 import image3 from "../../assets/HomeImages/Frame14.svg";
+import { Link } from "react-router-dom";
 
 const projects = [
 	{
-		name: "Projects Name",
+		name: "Urban Elegance",
 		img: image1,
 	},
 	{
-		name: "Projects Name",
+		name: "Serenity Suite",
 		img: image2,
 	},
 	{
-		name: "Projects Name",
+		name: "Monochrome Luxe",
 		img: image3,
 	},
 ];
@@ -41,9 +42,15 @@ const RecentProjects = () => (
 				</div>
 			))}
 		</div>
-		<button className="bg-[#2d3441] text-white font-marcellus text-[1.1rem] py-[14px] px-[38px] border-none rounded-[4px] tracking-[0.05em] cursor-pointer shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-colors duration-200 hover:bg-[#232b39]">
-			Explore Projects
-		</button>
+		<Link
+			to="/projects"
+			className="inline-block mt-6"
+			onClick={() => window.scrollTo(0, 0)}
+		>
+			<button className="bg-[#2d3441] text-white font-marcellus text-[1.1rem] py-[14px] px-[38px] border-none rounded-[4px] tracking-[0.05em] cursor-pointer shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-colors duration-200 hover:bg-[#232b39]">
+				Explore Projects
+			</button>
+		</Link>
 		<h2 className="font-marcellus font-normal text-[2.5rem] tracking-[0.04em] text-[#3b465a] capitalize mt-[100px]">
 			Modular Kitchens Designed for Modern Living
 		</h2>

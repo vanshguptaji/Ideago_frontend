@@ -5,8 +5,60 @@ const images = Object.values(
   import.meta.glob("../../assets/OurProjects/projects/*.{jpg,jpeg,png,svg}", { eager: true, import: "default", query: "?url" })
 );
 
+// Add your custom project names here, in the same order as the images
+const projectNames = [
+  "Exterior Elevation",
+  "Modern Modular Kitchen",
+  "Modern Luxe Kitchen",
+  "Minimalist Living Room",
+  "Modern Party Room",
+  "Compact Kitchen Upgrade",
+  "Modern Bedroom Design",
+  "Elegant Dining Room",
+  "Stylish Home Office",
+  "Urban Seminar Hall",
+  "Urban Living Space",
+  "Scandinavian Interior",
+  "Industrial Style Loft",
+  "Coastal Living Room",
+  "Rustic Cabin Retreat",
+  "Elegant Office Space",
+  "Modern Family Room",
+  "Spacious Living Area",
+  "Sophisticated Kitchen",
+  "Bright and Airy Kitchen",
+  "Chic Studio Apartment",
+  "Urban Chic Apartment",
+  "Modern Stylish Kitchen",
+  "Elegant Living Room",
+  "Contemporary Office",
+  "Elegant Living Room",
+  "Living Room with a View",
+  "Sleek Kitchen Design",
+  "Classic Living Room",
+  "Urban Apartment Render",
+  "Contemporary Kitchen",
+  "Residential Exterior",
+  "Residential Exterior",
+  "Living Room Render",
+  "Living Room Render",
+  "Living Room Render",
+  "Living Room Render",
+  "Living Room Render",
+  "Minimalist Interior",
+  "Cozy Bedroom Retreat",
+  "Elegant Hallway",
+  "Modern Facade",
+  "Artistic Living Space",
+  "Urban Loft",
+  "Luxury Suite",
+  "Family Home Render",
+  "Creative Workspace",
+];
+
+// Map names and images together
 const projects = images.map((image, idx) => ({
-  name: `Project ${idx + 1}`,
+  name: projectNames[idx] || `Project ${idx + 1}`,
   image,
 }));
 
