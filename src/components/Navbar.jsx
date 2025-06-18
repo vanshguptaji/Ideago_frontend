@@ -6,8 +6,11 @@ const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Close menu on navigation
-  const handleNavClick = () => setMenuOpen(false);
+  // Close menu on navigation and scroll to top
+  const handleNavClick = () => {
+    setMenuOpen(false);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <header className="w-full">
@@ -37,6 +40,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
+                onClick={handleNavClick}
                 className={`text-[#2d4661] ${
                   location.pathname === "/"
                     ? "font-bold border-b-2 border-[#2d4661] pb-0.5"
@@ -49,6 +53,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/projects"
+                onClick={handleNavClick}
                 className={`text-[#2d4661] ${
                   location.pathname === "/projects"
                     ? "font-bold border-b-2 border-[#2d4661] pb-0.5"
@@ -71,6 +76,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/aboutus"
+                onClick={handleNavClick}
                 className={`text-[#2d4661] ${
                   location.pathname === "/aboutus"
                     ? "font-bold border-b-2 border-[#2d4661] pb-0.5"
@@ -83,6 +89,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contactus"
+                onClick={handleNavClick}
                 className={`text-[#2d4661] ${
                   location.pathname === "/contactus"
                     ? "font-bold border-b-2 border-[#2d4661] pb-0.5"
