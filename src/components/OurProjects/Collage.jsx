@@ -39,7 +39,8 @@ const Collage = ({ images }) => {
       "
     >
       {/* Text Section */}
-      <div className="
+      <div
+        className="
         w-full
         lg:flex-1
         pr-0 pl-0
@@ -50,8 +51,10 @@ const Collage = ({ images }) => {
         md:text-left
         md:max-w-[700px]
         mx-auto
-      ">
-        <h2 className="
+      "
+      >
+        <h2
+          className="
           text-2xl
           sm:text-3xl
           md:text-4xl
@@ -61,24 +64,28 @@ const Collage = ({ images }) => {
           mb-3
           sm:mb-4
           text-[#2d2d2d]
-        ">
+        "
+        >
           WE PRIORITIZE CREATING
           <br />
           YOUR DREAM HOME DESIGN
         </h2>
-        <p className="
+        <p
+          className="
           text-sm
           sm:text-base
           md:text-lg
           text-[#444]
           mb-4
           sm:mb-6
-        ">
+        "
+        >
           We turn ideas into beautifully designed living spaces,
           <br className="hidden sm:block" />
           tailored to match your lifestyle, needs, and dreams.
         </p>
-        <button className="
+        <button
+          className="
           bg-[#2d3a4b]
           text-white
           px-6
@@ -91,7 +98,8 @@ const Collage = ({ images }) => {
           mx-auto
           md:mx-0
           block
-        ">
+        "
+        >
           Schedule Call
         </button>
       </div>
@@ -142,7 +150,15 @@ const Collage = ({ images }) => {
             onClick={() => scroll(-1)}
             type="button"
           >
-            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="#2d2d2d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path
+                d="M15 19l-7-7 7-7"
+                stroke="#2d2d2d"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
           <div
             ref={sliderRef}
@@ -168,7 +184,15 @@ const Collage = ({ images }) => {
             onClick={() => scroll(1)}
             type="button"
           >
-            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#2d2d2d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path
+                d="M9 5l7 7-7 7"
+                stroke="#2d2d2d"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
       </div>

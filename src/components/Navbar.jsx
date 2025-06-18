@@ -12,11 +12,11 @@ const Navbar = () => {
   return (
     <header className="w-full">
       {/* Top Bar */}
-      <div className="bg-[#2d4661] text-white py-2 text-center font-semibold text-base tracking-wide">
+      <div className="bg-[#2d4661] text-white py-2 text-center font-semibold text-base tracking-wide fixed top-0 left-0 w-full z-50 ">
         Call Us : +91 9876 543210
       </div>
       {/* Main Navbar */}
-      <nav className="bg-[#f7f6f4] border-b border-gray-200 px-4 sm:px-10">
+      <nav className="bg-[#f7f6f4] border-b border-gray-200 px-4 sm:px-10 fixed top-10 left-0 w-full z-50">
         <div className="flex items-center justify-between min-h-16">
           {/* Logo */}
           <div className="flex items-center">
@@ -60,7 +60,9 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#kitchen"
+                href="/kitchen"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#2d4661] hover:font-semibold"
               >
                 Kitchen
@@ -148,7 +150,9 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#kitchen"
+                  href="/kitchen"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={handleNavClick}
                   className="text-[#2d4661] hover:font-semibold"
                 >

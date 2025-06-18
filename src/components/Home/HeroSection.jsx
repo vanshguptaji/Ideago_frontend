@@ -44,7 +44,7 @@ const HeroSection = () => {
   }, [current, hasLooped, isMobile]);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden flex justify-center items-center bg-black">
+    <div className="relative top-12 w-screen h-screen overflow-hidden flex justify-center items-center bg-black">
       {isMobile ? (
         <img
           src={staticMobileImage}

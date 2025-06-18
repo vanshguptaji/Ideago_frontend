@@ -12,7 +12,7 @@ function AboutUs() {
       <PerfectTeam />
       <Achievements />
       <OurServices />
-      <OurTeam />
+      {/* <OurTeam /> */}
     </>
   );
 }
