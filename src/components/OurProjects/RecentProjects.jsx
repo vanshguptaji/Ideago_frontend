@@ -3,6 +3,7 @@ import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "../ui/draggable-card";
+import ImageWithLoader from "../common/ImageWithLoader";
 
 const images = Object.values(
   import.meta.glob("../../assets/OurProjects/projects/*.{jpg,jpeg,png,svg}", {
@@ -379,6 +380,7 @@ function Modal({ open, onClose, project, image, thumbRect }) {
           <img
             ref={modalImgRef}
             src={image}
+            loading="lazy"
             alt={project.name}
             className="object-cover w-full h-full"
             draggable={false}
@@ -464,10 +466,10 @@ export default function Collage2() {
               className="relative h-64 w-full overflow-hidden rounded-md"
               ref={(el) => (thumbRefs.current[idx] = el)}
             >
-              <img
+              <ImageWithLoader
                 src={project.image}
                 alt={project.name}
-                className="object-cover w-full h-full"
+                className=""
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 w-full p-4 flex flex-col items-start">

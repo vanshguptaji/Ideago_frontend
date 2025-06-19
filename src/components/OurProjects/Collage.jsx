@@ -3,6 +3,7 @@ import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "../ui/draggable-card";
+import ImageWithLoader from "../common/ImageWithLoader"; // Import the loader
 
 const Collage = ({ images }) => {
   if (!images || images.length < 3) return null;
@@ -117,7 +118,8 @@ const Collage = ({ images }) => {
           >
             {/* Top image (full width) */}
             <DraggableCardBody className="absolute left-2 top-0 z-20 w-[500px] h-[170px] shadow-2xl border-4 border-white rounded-xl pointer-events-auto transition-transform duration-300 hover:scale-105">
-              <img
+              <div className="bg-black text-white flex items-center justify-center h-10">Grab here</div>
+              <ImageWithLoader
                 src={images[0].src}
                 alt={images[0].title}
                 className="w-full h-full object-cover rounded-xl"
@@ -125,7 +127,8 @@ const Collage = ({ images }) => {
             </DraggableCardBody>
             {/* Bottom left image */}
             <DraggableCardBody className="absolute left-0 top-[150px] z-30 w-[320px] h-[240px] shadow-2xl border-4 border-white rounded-xl pointer-events-auto transition-transform duration-300 hover:scale-105">
-              <img
+              <div className="bg-black text-white flex items-center justify-center h-10">Grab here</div>
+              <ImageWithLoader
                 src={images[1].src}
                 alt={images[1].title}
                 className="w-full h-full object-cover rounded-xl"
@@ -133,7 +136,8 @@ const Collage = ({ images }) => {
             </DraggableCardBody>
             {/* Bottom right image */}
             <DraggableCardBody className="absolute right-0 top-[190px] z-40 w-[260px] h-[180px] shadow-2xl border-4 border-white rounded-xl pointer-events-auto transition-transform duration-300 hover:scale-105">
-              <img
+              <div className="bg-black text-white flex items-center justify-center h-10">Grab here</div>
+              <ImageWithLoader
                 src={images[2].src}
                 alt={images[2].title}
                 className="w-full h-full object-cover rounded-xl"
@@ -169,7 +173,7 @@ const Collage = ({ images }) => {
                 key={idx}
                 className="min-w-[80%] max-w-[90%] flex-shrink-0 aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-2 border-white snap-center"
               >
-                <img
+                <ImageWithLoader
                   src={img.src}
                   alt={img.title}
                   className="w-full h-full object-cover"

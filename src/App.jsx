@@ -66,6 +66,18 @@ function App() {
     ]);
   }, []);
 
+  const projectImages = Object.values(
+    import.meta.glob("./assets/OurProjects/projects/*.{jpg,jpeg,png,svg}", {
+      eager: true,
+      import: "default",
+      query: "?url",
+    })
+  );
+
+  useEffect(() => {
+    preloadImages(projectImages);
+  }, []);
+
   const Redirect = () => {
     useEffect(() => {
       window.location.href = "https://kitchendotcom.in/";
