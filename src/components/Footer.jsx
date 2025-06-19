@@ -1,7 +1,18 @@
 import React from "react";
 import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { useLocation } from "react-router-dom"; // Add this import
+
+const links = [
+  { name: "Home", path: "/" },
+  { name: "Our Projects", path: "/projects" },
+  { name: "Kitchen", path: "/kitchen" },
+  { name: "About Us", path: "/aboutus" },
+  { name: "Contact Us", path: "/contactus" },
+];
 
 const Footer = () => {
+  const location = useLocation(); // Get current location
+
   return (
     <footer className="bg-[#c7d8e3] py-24 px-8">
       <div className="max-w-7xl mx-auto">
@@ -23,23 +34,20 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-3 text-[#37475a] font-medium">
-              <li>
-                <a href="#" className="font-bold underline underline-offset-2">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#">Our Projects</a>
-              </li>
-              <li>
-                <a href="#">Kitchen</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
+              {links.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.path}
+                    className={
+                      location.pathname === link.path
+                        ? "font-bold underline underline-offset-2"
+                        : ""
+                    }
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           {/* Contact Us */}

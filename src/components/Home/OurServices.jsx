@@ -57,7 +57,7 @@ const OurServices = () => {
   };
 
   return (
-    <section className="w-full bg-[#f7f6f4] py-10 px-2 sm:py-16 sm:px-4">
+    <section className="w-full bg-[#f7f6f4] py-10 px-2 sm:py-16 sm:px-4 mt-8">
       {/* Import Marcellus SC font */}
       <style>
         {`
