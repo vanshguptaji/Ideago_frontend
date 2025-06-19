@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import bgImage from "../../assets/AboutUs/image 3.svg";
-import bgImageMobile from "../../assets/AboutUs/Achievement.png";
+import bgImageMobile from "../../assets/AboutUs/achievement.png";
 
 const achievements = [
   { number: "236+", label: "PROJECTS COMPLETED" },
