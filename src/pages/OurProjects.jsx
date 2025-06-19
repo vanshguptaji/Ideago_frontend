@@ -1,11 +1,11 @@
 import React from 'react'
 import HeroSection from '../components/OurProjects/HeroSection'
-import Collage from '../components/OurProjects/COllage'
 import img1 from '../assets/OurProjects/image2.svg'
 import img2 from '../assets/OurProjects/image4.svg'
 import img3 from '../assets/OurProjects/image3.svg'
 import Footer from '../components/Footer'
 import Collage2 from '../components/OurProjects/RecentProjects'
+import Collage from '../components/OurProjects/Collage'
 
 function OurProjects() {
   const images = [

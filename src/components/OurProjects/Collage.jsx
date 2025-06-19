@@ -3,7 +3,7 @@ import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "../ui/draggable-card";
-import ImageWithLoader from "../common/ImageWithLoader"; // Import the loader
+import ImageWithLoader from "../common/ImageWithLoader.jsx"; // Import the loader
 
 const Collage = ({ images }) => {
   if (!images || images.length < 3) return null;
