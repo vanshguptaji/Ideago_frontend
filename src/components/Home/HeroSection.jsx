@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
-import hero1 from "../../assets/HomeImages/hero.svg";
-import hero2 from "../../assets/HomeImages/hero2.svg";
-import hero3 from "../../assets/HomeImages/hero3.svg";
+import hero1 from "../../assets/HomeImages/property-1frame-120-685425fc3d303.webp";
+// import hero2 from "../../assets/HomeImages/hero2.svg";
+import hero3 from "../../assets/HomeImages/property-1frame-118-685425efaf27b.webp";
 import staticMobileImage from "../../assets/HomeImages/smallScreenHero.svg";
+import hero2 from "../../assets/HomeImages/property-1frame-119-68540e6b2fe05.webp";
 
 const images = [hero1, hero2, hero3];
 
