@@ -103,14 +103,14 @@ const Navbar = () => {
           {/* Social Icons (desktop) */}
           <div className="hidden sm:flex items-center space-x-4 text-[#2d4661]">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/ideagoinfrastructures"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-instagram text-lg"></i>
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/ideagointeriors/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -195,14 +195,14 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center space-x-4 text-[#2d4661] mt-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/ideagoinfrastructures"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-instagram text-lg"></i>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/ideagointeriors/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
