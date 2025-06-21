@@ -1,11 +1,14 @@
 import React from "react";
+import image from "../../assets/OurProjects/projects/bedroom 1 .jpg"
 
 const PerfectTeam = () => {
   return (
     <section className="bg-[#f7f3ef] py-16 flex flex-col items-center min-h-[600px]">
       <div className="flex flex-col md:flex-row max-w-6xl w-full justify-center items-start gap-12 px-4">
         {/* Left: Placeholder for image */}
-        <div className="bg-gray-300 w-full md:w-[480px] h-[340px] rounded-lg mb-8 md:mb-0"></div>
+        <div className="bg-gray-300 w-full md:w-[480px] h-[340px] rounded-lg mb-8 md:mb-0">
+          <img src={image} alt="image" className="w-full h-full"/>
+        </div>
         {/* Right: Text Content */}
         <div className="max-w-xl">
           <h2 className="font-serif font-medium text-3xl md:text-4xl text-[#222] leading-tight mb-6 tracking-wide">
