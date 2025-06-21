@@ -1,23 +1,26 @@
 import React, { useState } from "react";
-import client1 from "../../assets/HomeImages/Frame169.svg";
-import client2 from "../../assets/HomeImages/Frame169.svg";
-import client3 from "../../assets/HomeImages/Frame169.svg";
+import client1 from "../../assets/HomeImages/Sahil.jpeg";
+import client2 from "../../assets/HomeImages/AnkurRao.jpeg";
+import client3 from "../../assets/HomeImages/SharadGupta.jpeg";
 import quoteBg from "../../assets/HomeImages/,.svg"; 
 const testimonials = [
   {
-    name: "Client Name",
+    name: "Mr. Sahil",
     image: client1,
-    text: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus ne Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus ne`,
+    text: `"My bedroom reflects exactly how I want to move through the modern world — with clarity, simplicity, and purpose. The modern design doesn’t shout; it speaks subtly. Every element feels intentional, allowing me to stay grounded while navigating the fast-paced material world."
+— Mr. Sahil`,
   },
   {
-    name: "Client Name2",
+    name: "Ankur Rao",
     image: client2,
-    text: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus ne Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus ne`,
+    text: `The conference room designed for us strikes the perfect balance between functionality and elegance. The thoughtful use of space, modern aesthetics, and seamless integration of technology make every meeting more productive and inspiring. It truly reflects the professional environment we envisioned."
+— Mr. Ankur Rao`,
   },
   {
-    name: "Client Name",
+    name: "Sharad Gupta",
     image: client3,
-    text: `Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus ne Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus ne`,
+    text: `"The new exterior elevation design reflects a perfect blend of modern aesthetics and functional appeal. It brings a refreshing, contemporary look to the property while maintaining elegance and structural harmony,"  
+  - Mr. Sharad Gupta.`,
   },
 ];
 const Client = () => {
@@ -42,17 +45,17 @@ const Client = () => {
                 aria-hidden="true"
               />
               {/* Testimonial text */}
-              <p className="relative z-10 text-center text-[#2d3142] font-light mb-8">
+              <p className="relative z-10 text-center text-[#2d3142] font-light mb-8 min-h-48">
                 {testimonial.text}
               </p>
               {/* Client image and name */}
-              <div className="flex items-center gap-3 relative z-10 w-full">
+              <div className="flex flex-col items-center relative z-10 bottom-0 w-full">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-14 h-14 rounded-full border-4 border-white shadow-lg object-cover"
+                  className="w-28 h-28 rounded-full border-4 border-white shadow-lg object-cover"
                 />
-                <span className="font-medium text-[#2d3142]">
+                <span className="font-medium text-[#2d3142] mt-2">
                   {testimonial.name}
                 </span>
               </div>

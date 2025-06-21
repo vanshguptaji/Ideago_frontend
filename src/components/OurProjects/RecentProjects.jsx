@@ -415,7 +415,7 @@ function Modal({ open, onClose, project, image, thumbRect }) {
             <h3 className="text-3xl font-semibold mb-4 text-center text-white drop-shadow-lg">
               {project.name}
             </h3>
-            <p className="text-base text-gray-200 text-center whitespace-pre-line">
+            <p className="text-base text-gray-200 text-left whitespace-pre-line">
               {project.description}
             </p>
           </div>
