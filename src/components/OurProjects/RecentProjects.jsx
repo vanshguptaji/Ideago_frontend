@@ -293,7 +293,6 @@ As a growing name in living room interior design in Varanasi, especially in prem
 🏡 Category: Smart Residential Interiors`,
 ];
 
-// Map projects with name, image, and description
 const projects = images.map((image, idx) => ({
   name: projectNames[idx] || `Project ${idx + 1}`,
   image,
@@ -307,21 +306,18 @@ function Modal({ open, onClose, project, image, thumbRect }) {
   const [animate, setAnimate] = useState(false);
   const [parallaxY, setParallaxY] = useState(0);
 
-  // Parallax effect based on mouse movement inside modal
   const handleMouseMove = (e) => {
     const modal = e.currentTarget;
     const rect = modal.getBoundingClientRect();
     const y = e.clientY - rect.top;
-    // Map y position to a range, e.g., -20px to +20px
-    const percentY = (y / rect.height - 0.5) * 2; // -1 to 1
-    setParallaxY(percentY * 20); // max 20px up/down
+    const percentY = (y / rect.height - 0.5) * 2; 
+    setParallaxY(percentY * 20);
   };
 
   const handleMouseLeave = () => {
     setParallaxY(0);
   };
 
-  // Animate image in (keep for smooth modal open)
   useLayoutEffect(() => {
     if (!open || !thumbRect || !modalImgRef.current) return;
 
@@ -367,7 +363,6 @@ function Modal({ open, onClose, project, image, thumbRect }) {
         onMouseLeave={handleMouseLeave}
         style={{ cursor: "pointer" }}
       >
-        {/* Parallax background image with black gradient overlay */}
         <div
           className="absolute inset-0 w-full h-full z-0"
           style={{
@@ -393,7 +388,6 @@ function Modal({ open, onClose, project, image, thumbRect }) {
               boxShadow: animate ? "0 10px 40px rgba(0,0,0,0.2)" : undefined,
             }}
           />
-          {/* Black gradient overlay */}
           <div
             className="absolute inset-0"
             style={{
@@ -409,7 +403,6 @@ function Modal({ open, onClose, project, image, thumbRect }) {
         >
           &times;
         </button>
-        {/* Scrollable content */}
         <div className="flex-1 flex flex-col overflow-y-auto pt-20 px-8 pb-8 z-10 relative">
           <div className="w-full flex flex-col items-center">
             <h3 className="text-3xl font-semibold mb-4 text-center text-white drop-shadow-lg">
@@ -431,7 +424,6 @@ export default function Collage2() {
   const [selectedProjectIdx, setSelectedProjectIdx] = useState(null);
   const [thumbRect, setThumbRect] = useState(null);
 
-  // Refs for all thumbnails
   const thumbRefs = useRef([]);
 
   const handleKnowMore = () => {
@@ -495,7 +487,6 @@ export default function Collage2() {
           Know More
         </button>
       )}
-      {/* Modal */}
       {selectedProjectIdx !== null && (
         <Modal
           open={modalOpen}

@@ -58,9 +58,6 @@ export default function Info() {
           </p>
         </div>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-8">
-          {/* Quick Links */}
-          {/* Contact Us */}
-          {/* Enquire Form */}
           <div>
             <h4 className="font-semibold text-[#2d2d2d] mb-4 tracking-widest">ENQUIRE</h4>
             <form className="space-y-3">

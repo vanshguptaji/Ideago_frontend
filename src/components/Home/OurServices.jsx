@@ -58,7 +58,6 @@ const OurServices = () => {
 
   return (
     <section className="w-full bg-[#f7f6f4] py-10 px-2 sm:py-16 sm:px-4 mt-8">
-      {/* Import Marcellus SC font */}
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
@@ -66,11 +65,9 @@ const OurServices = () => {
         `}
       </style>
       <div className="max-w-6xl mx-auto">
-        {/* Title */}
         <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-6 sm:mb-8 tracking-wide">
           Our Services
         </h2>
-        {/* Service Tabs */}
         <div
           className="
         flex flex-wrap justify-center gap-2 sm:gap-3
@@ -94,7 +91,6 @@ const OurServices = () => {
             </button>
           ))}
         </div>
-        {/* Content with slider animation */}
         <div className="relative min-h-[420px] sm:min-h-[500px] pb-6">
           <div
             className={`
@@ -110,9 +106,7 @@ const OurServices = () => {
             `}
             style={{ pointerEvents: animating ? "none" : "auto" }}
           >
-            {/* Current Content */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-10 h-auto">
-              {/* Left: Text */}
               <div className="flex-1 flex flex-col justify-center h-full px-2 sm:px-0">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-marcellus text-[#2d4661] mb-2 sm:mb-4 leading-snug uppercase text-center md:text-left">
                   {services[selected].title}
@@ -126,7 +120,6 @@ const OurServices = () => {
                   </button>
                 </div>
               </div>
-              {/* Right: Image */}
               <div className="flex-1/3 flex justify-center items-center w-full">
                 <img
                   src={services[selected].image}

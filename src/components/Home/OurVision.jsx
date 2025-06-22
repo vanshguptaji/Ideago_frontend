@@ -7,7 +7,6 @@ const OurVision = () => {
   const containerRef = useRef(null);
   const dragging = useRef(false);
 
-  // Helper to set slider value based on mouse/touch position
   const updateSlider = (clientX) => {
     const rect = containerRef.current.getBoundingClientRect();
     let percent = ((clientX - rect.left) / rect.width) * 100;
@@ -15,7 +14,6 @@ const OurVision = () => {
     setSliderValue(percent);
   };
 
-  // Mouse events
   const handleMouseDown = (e) => {
     dragging.current = true;
     updateSlider(e.clientX);
@@ -35,7 +33,6 @@ const OurVision = () => {
     window.removeEventListener("mouseup", handleMouseUp);
   };
 
-  // Touch events
   const handleTouchStart = (e) => {
     dragging.current = true;
     updateSlider(e.touches[0].clientX);
@@ -64,7 +61,6 @@ const OurVision = () => {
         ref={containerRef}
         className="relative max-w-6xl mx-auto aspect-[2/1] rounded-lg overflow-hidden shadow-md bg-white"
       >
-        {/* Sketch Image (left) */}
         <img
           src={Sketch}
           alt="Vision Sketch"
@@ -72,7 +68,6 @@ const OurVision = () => {
           style={{ clipPath: `inset(0 ${100 - sliderValue}% 0 0)` }}
           draggable={false}
         />
-        {/* Real Image (right) */}
         <img
           src={OurVisions}
           alt="Reality"
@@ -80,7 +75,6 @@ const OurVision = () => {
           style={{ clipPath: `inset(0 0 0 ${sliderValue}%)` }}
           draggable={false}
         />
-        {/* Slider */}
         <input
           type="range"
           min={0}
@@ -89,7 +83,6 @@ const OurVision = () => {
           onChange={e => setSliderValue(Number(e.target.value))}
           className="absolute bottom-4 left-1/2 -translate-x-1/2 w-2/3 z-20 accent-[#3b3b3b]"
         />
-        {/* Divider (Draggable) */}
         <div
           className="absolute top-0 bottom-0 z-10 flex items-center cursor-ew-resize"
           style={{ left: `${sliderValue}%`, transform: "translateX(-50%)" }}

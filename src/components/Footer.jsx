@@ -11,12 +11,11 @@ const links = [
 ];
 
 const Footer = () => {
-  const location = useLocation(); // Get current location
+  const location = useLocation(); 
 
   return (
     <footer className="bg-[#c7d8e3] py-24 px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-serif text-[#37475a] mb-4">
             Ready to Transform Your Space?
@@ -26,9 +25,7 @@ const Footer = () => {
             purpose, and lifestyle.
           </p>
         </div>
-        {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Quick Links */}
           <div>
             <h3 className="uppercase text-[#37475a] font-semibold text-sm mb-6 tracking-wide">
               Quick Links
@@ -50,7 +47,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          {/* Contact Us */}
           <div>
             <h3 className="uppercase text-[#37475a] font-semibold text-sm mb-6 tracking-wide">
               Contact Us
@@ -79,7 +75,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* Enquire Form */}
           <div>
             <h3 className="uppercase text-[#37475a] font-semibold text-sm mb-6 tracking-wide">
               Enquire

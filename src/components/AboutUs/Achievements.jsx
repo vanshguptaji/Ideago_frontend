@@ -10,7 +10,7 @@ const achievements = [
 ];
 
 const Achievements = () => {
-  const [background, setBackground] = useState(bgImage); // default to desktop
+  const [background, setBackground] = useState(bgImage);
   const [counts, setCounts] = useState(achievements.map(() => 0));
   const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef(null);
@@ -50,7 +50,7 @@ const Achievements = () => {
   useEffect(() => {
     if (!hasAnimated) return;
 
-    const durations = [3000, 3000, 3000, 3000]; // Increased duration for slower animation
+    const durations = [3000, 3000, 3000, 3000];
     const increments = achievements.map((item, i) =>
       Math.ceil(item.number / (durations[i] / 16))
     );
@@ -87,7 +87,6 @@ const Achievements = () => {
     animationFrame = requestAnimationFrame(animateCountUp);
 
     return () => cancelAnimationFrame(animationFrame);
-    // eslint-disable-next-line
   }, [hasAnimated]);
 
   return (

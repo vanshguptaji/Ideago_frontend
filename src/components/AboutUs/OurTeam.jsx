@@ -31,7 +31,7 @@ const OurTeam = () => {
       setIsScreenSmall(window.innerWidth < 768);
     };
     window.addEventListener("resize", handleResize);
-    // Set initial value on mount
+    
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);

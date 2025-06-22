@@ -3,7 +3,7 @@ import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "../ui/draggable-card";
-import ImageWithLoader from "../common/ImageWithLoader.jsx"; // Import the loader
+import ImageWithLoader from "../common/ImageWithLoader.jsx"; 
 
 const Collage = ({ images }) => {
   if (!images || images.length < 3) return null;
@@ -104,9 +104,7 @@ const Collage = ({ images }) => {
           Schedule Call
         </button>
       </div>
-      {/* Collage Section */}
       <div className="w-full lg:w-auto flex justify-center">
-        {/* Desktop Collage */}
         <div className="hidden lg:block flex-shrink-0 relative w-[520px] h-[420px]">
           <DraggableCardContainer
             className="
@@ -116,7 +114,6 @@ const Collage = ({ images }) => {
               z-10
             "
           >
-            {/* Top image (full width) */}
             <DraggableCardBody className="absolute left-2 top-0 z-20 w-[500px] h-[170px] shadow-2xl border-4 border-white rounded-xl pointer-events-auto transition-transform duration-300 hover:scale-105">
               <div className="bg-black text-white flex items-center justify-center h-10">Grab here</div>
               <ImageWithLoader
@@ -125,7 +122,6 @@ const Collage = ({ images }) => {
                 className="w-full h-full object-cover rounded-xl"
               />
             </DraggableCardBody>
-            {/* Bottom left image */}
             <DraggableCardBody className="absolute left-0 top-[150px] z-30 w-[320px] h-[240px] shadow-2xl border-4 border-white rounded-xl pointer-events-auto transition-transform duration-300 hover:scale-105">
               <div className="bg-black text-white flex items-center justify-center h-10">Grab here</div>
               <ImageWithLoader
@@ -134,7 +130,6 @@ const Collage = ({ images }) => {
                 className="w-full h-full object-cover rounded-xl"
               />
             </DraggableCardBody>
-            {/* Bottom right image */}
             <DraggableCardBody className="absolute right-0 top-[190px] z-40 w-[260px] h-[180px] shadow-2xl border-4 border-white rounded-xl pointer-events-auto transition-transform duration-300 hover:scale-105">
               <div className="bg-black text-white flex items-center justify-center h-10">Grab here</div>
               <ImageWithLoader
@@ -145,7 +140,6 @@ const Collage = ({ images }) => {
             </DraggableCardBody>
           </DraggableCardContainer>
         </div>
-        {/* Mobile Slider */}
         <div className="lg:hidden w-full max-w-[500px] mx-auto relative">
           <button
             aria-label="Previous"

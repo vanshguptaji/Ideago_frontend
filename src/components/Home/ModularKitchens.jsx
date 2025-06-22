@@ -11,8 +11,6 @@ const highlights = [
 
 const ModularKitchens = () => (
   <section className="bg-[#f8f5f2] pb-16 font-marcellus">
-    {/* Header */}
-    {/* Content */}
     <p className="font-marcellus text-[#5b6477] text-lg mb-8 leading-relaxed tracking-wide text-center">
           Transform your kitchen with our custom modular designs — where style meets
           smart functionality.

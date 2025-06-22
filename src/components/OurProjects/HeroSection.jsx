@@ -3,15 +3,12 @@ import heroBg from "../../assets/OurProjects/OurProject.png";
 
 const HeroSection = () => (
   <section className="relative w-full h-[480px] md:h-[720px] flex items-start justify-center overflow-hidden p-8 mt-20">
-    {/* Background Image */}
     <img
       src={heroBg}
       alt="Our Projects"
       className="absolute inset-0 w-full h-full object-cover"
     />
-    {/* Overlay */}
     <div className="absolute inset-0 bg-black/50" />
-    {/* Content */}
     <div className="relative z-10 max-w-5xl px-0 text-start flex flex-col items-start justify-center h-full">
       <h1 className="text-white font-marcellus text-4xl md:text-5xl font-normal tracking-wide mb-6">
         OUR PROJECTS

@@ -36,7 +36,6 @@ const Client = () => {
               key={idx}
               className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center relative overflow-hidden"
             >
-              {/* Big quote shape as background image */}
               <img
                 src={quoteBg}
                 alt=""
@@ -44,11 +43,9 @@ const Client = () => {
         ${idx === 1 ? "scale-y-[-1]" : ""}`}
                 aria-hidden="true"
               />
-              {/* Testimonial text */}
               <p className="relative z-10 text-center text-[#2d3142] font-light mb-8 min-h-48">
                 {testimonial.text}
               </p>
-              {/* Client image and name */}
               <div className="flex flex-col items-center relative z-10 bottom-0 w-full">
                 <img
                   src={testimonial.image}
