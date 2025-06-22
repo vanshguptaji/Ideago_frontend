@@ -9,8 +9,8 @@ export default function Info() {
           <PhoneIcon className="h-10 w-10 text-[#2d2d2d] mb-4" />
           <h3 className="text-lg font-semibold tracking-widest text-gray-700 mb-2">PHONE</h3>
           <div className="text-gray-600 text-base space-y-1">
-            <div>+91 9876543210</div>
-            <div>+91 9876543210</div>
+            <div>+91 8707482268</div>
+            <div>+91 9305281003</div>
           </div>
         </div>
         {/* Location */}
