@@ -33,8 +33,10 @@ export default function Info() {
         <div className="flex flex-col items-center py-8">
           <EnvelopeIcon className="h-10 w-10 text-[#2d2d2d] mb-4" />
           <h3 className="text-lg font-marcellus font-semibold tracking-widest text-[#2d4661] mb-2 uppercase">EMAIL</h3>
-          <div className="text-[#444] text-base font-marcellus space-y-4 text-center">
-            <div>artistavishaw@gmail.com</div>
+          <div className="text-[#444] text-base space-y-4 text-center">
+            <div className="font-sans lowercase tracking-normal" style={{ letterSpacing: "normal" }}>
+              artistavishaw@gmail.com
+            </div>
           </div>
         </div>
       </div>
