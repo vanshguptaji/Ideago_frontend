@@ -97,7 +97,7 @@ const Navbar = () => {
           </ul>
           <div className="hidden sm:flex items-center space-x-4 text-[#2d4661]">
             <a
-              href="https://www.instagram.com/ideagoinfrastructures"
+              href="https://www.instagram.com/ideagointeriorsvaranasi/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -188,7 +188,7 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center space-x-4 text-[#2d4661] mt-4">
               <a
-                href="https://www.instagram.com/ideagoinfrastructures"
+                href="https://www.instagram.com/ideagointeriorsvaranasi/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

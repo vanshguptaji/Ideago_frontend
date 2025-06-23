@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import livingRoom from "../../assets/HomeImages/Ourservice.png";
 import commercialImg from "../../assets/HomeImages/CommercialServices.png";
 import modularKitchenImg from "../../assets/HomeImages/ModularKitchens.png";
@@ -44,6 +45,7 @@ const OurServices = () => {
   const [selected, setSelected] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [direction, setDirection] = useState("right");
+  const navigate = useNavigate(); // Add this line
 
   // Animation handler
   const handleTabClick = (idx) => {
@@ -81,7 +83,7 @@ const OurServices = () => {
               className={`px-4 py-3 text-sm sm:text-base md:text-lg font-marcellus border transition whitespace-nowrap
                 ${
                   selected === idx
-                    ? "bg-[#2d4661] text-white border-[#2d4661]"
+                    ? "bg-[#2d4661] text-white border-[#2d4661] hover:bg-[#1a2b3c] hover:text-white"
                     : "bg-[#dbe6ef] text-[#2d4661] border-[#dbe6ef] hover:bg-[#b8c9db]"
                 }
                 `}
@@ -115,7 +117,12 @@ const OurServices = () => {
                   {services[selected].desc}
                 </p>
                 <div className="flex justify-center md:justify-start">
-                  <button className="mt-2 px-6 sm:px-8 py-2 border border-[#2d4661] text-[#2d4661] font-marcellus text-base sm:text-lg uppercase tracking-wide bg-transparent hover:bg-[#2d4661] hover:text-white transition">
+                  <button
+                    className="mt-2 px-6 sm:px-8 py-2 border border-[#2d4661] text-[#2d4661] font-marcellus text-base sm:text-lg uppercase tracking-wide bg-transparent hover:bg-[#2d4661] hover:text-white transition"
+                    onClick={() =>
+                      navigate("/contactus") // Add navigation on button click
+                    }
+                  >
                     Schedule Call
                   </button>
                 </div>

@@ -32,7 +32,10 @@ const ModularKitchens = () => (
             </li>
           ))}
         </ul>
-        <button className="bg-[#232b39] text-white font-marcellus text-lg py-4 px-12 rounded-sm tracking-wide shadow-md capitalize hover:bg-[#3b465a] transition">
+        <button
+          className="bg-[#232b39] text-white font-marcellus text-lg py-4 px-12 rounded-sm tracking-wide shadow-md capitalize hover:bg-[#3b465a] transition"
+          onClick={() => window.open("https://kitchendotcom.in/", "_blank")}
+        >
           Explore More
         </button>
       </div>

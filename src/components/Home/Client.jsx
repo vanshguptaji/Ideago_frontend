@@ -26,8 +26,14 @@ const testimonials = [
 const Client = () => {
   return (
     <section className="py-16 bg-[#f7f3ef]">
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+          .font-marcellus { font-family: 'Marcellus SC', serif; }
+        `}
+      </style>
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-serif text-center mb-12 tracking-wide text-[#2d3142]">
+        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-12 tracking-wide">
           CLIENT TESTIMONIALS
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

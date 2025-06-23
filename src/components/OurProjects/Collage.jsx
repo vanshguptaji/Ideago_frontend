@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom"; // Add this import
 import {
   DraggableCardBody,
   DraggableCardContainer,
@@ -7,6 +8,8 @@ import ImageWithLoader from "../common/ImageWithLoader.jsx";
 
 const Collage = ({ images }) => {
   if (!images || images.length < 3) return null;
+
+  const navigate = useNavigate(); // Add this line
 
   // Slider scroll handler for mobile
   const sliderRef = useRef(null);
@@ -39,6 +42,12 @@ const Collage = ({ images }) => {
         sm:px-4
       "
     >
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+          .font-marcellus { font-family: 'Marcellus SC', serif; }
+        `}
+      </style>
       {/* Text Section */}
       <div
         className="
@@ -56,30 +65,34 @@ const Collage = ({ images }) => {
       >
         <h2
           className="
-          text-2xl
-          sm:text-3xl
-          md:text-4xl
-          font-marcellus
-          font-normal
-          leading-tight
-          mb-3
-          sm:mb-4
-          text-[#2d2d2d]
-        "
+            text-2xl
+            sm:text-3xl
+            md:text-4xl
+            font-marcellus
+            text-[#2d4661]
+            mb-3
+            sm:mb-4
+            tracking-wide
+          "
         >
-          WE PRIORITIZE CREATING
+          We Prioritize Creating
           <br />
-          YOUR DREAM HOME DESIGN
+          Your Dream Home Design
         </h2>
         <p
           className="
-          text-sm
-          sm:text-base
-          md:text-lg
-          text-[#444]
-          mb-4
-          sm:mb-6
-        "
+            text-[#444]
+            text-sm
+            sm:text-base
+            md:text-lg
+            mt-4
+            sm:mt-8
+            mb-4
+            sm:mb-6
+            font-marcellus
+            text-center
+            md:text-left
+          "
         >
           We turn ideas into beautifully designed living spaces,
           <br className="hidden sm:block" />
@@ -100,6 +113,10 @@ const Collage = ({ images }) => {
           md:mx-0
           block
         "
+          onClick={() => {
+            navigate("/contactus");
+            window.scrollTo(0, 0);
+          }}
         >
           Schedule Call
         </button>

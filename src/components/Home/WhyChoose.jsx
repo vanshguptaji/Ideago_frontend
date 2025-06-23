@@ -30,7 +30,13 @@ const features = [
 
 const WhyChoose = () => (
 	<section className="py-12 px-4 sm:px-8 md:px-24 lg:px-48 text-center bg-[#F4EFEB]">
-		<h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-10 md:mb-14 tracking-wide uppercase font-normal">
+		<style>
+			{`
+                @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+                .font-marcellus { font-family: 'Marcellus SC', serif; }
+            `}
+		</style>
+		<h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-10 md:mb-14 tracking-wide">
 			Why Choose Ideago Interiors?
 		</h2>
 		<div className="flex flex-col gap-y-8 sm:gap-y-10 md:flex-row md:justify-center md:gap-x-24 md:gap-y-12">

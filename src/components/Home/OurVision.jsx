@@ -54,7 +54,13 @@ const OurVision = () => {
 
   return (
     <section className="bg-[#f8f5f2] py-12 text-center">
-      <h2 className="font-marcellus text-2xl md:text-3xl font-semibold mb-8 text-[#3b3b3b] tracking-wide uppercase">
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+          .font-marcellus { font-family: 'Marcellus SC', serif; }
+        `}
+      </style>
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-6 sm:mb-8 tracking-wide">
         From Vision to Reality
       </h2>
       <div

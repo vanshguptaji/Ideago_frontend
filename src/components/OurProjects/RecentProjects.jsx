@@ -445,9 +445,18 @@ export default function Collage2() {
 
   return (
     <section className="w-full py-12 px-2 mt-56 md:px-0 bg-[#f7f1ea] flex flex-col items-center">
-      <h2 className="text-2xl md:text-3xl font-marcellus font-semibold mb-10 text-[#3c2e1f] tracking-wide">
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+          .font-marcellus { font-family: 'Marcellus SC', serif; }
+        `}
+      </style>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-6 sm:mb-8 tracking-wide text-center">
         Recent Projects
       </h2>
+      <p className="text-[#444] text-sm sm:text-base md:text-lg mb-8 font-marcellus text-center max-w-2xl">
+        Explore our latest interior and exterior design projects, each crafted to reflect unique lifestyles and aspirations. From modern kitchens to elegant living spaces, discover how we turn ideas into reality.
+      </p>
       <DraggableCardContainer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {projects.slice(0, visibleCount).map((project, idx) => (
           <DraggableCardBody
