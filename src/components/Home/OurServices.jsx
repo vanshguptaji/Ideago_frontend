@@ -110,7 +110,7 @@ const OurServices = () => {
           >
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-10 h-auto">
               <div className="flex-1 flex flex-col justify-center h-full px-2 sm:px-0">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-marcellus text-[#2d4661] mb-2 sm:mb-4 leading-snug uppercase text-center md:text-left">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-2 sm:mb-4 tracking-wide text-center md:text-left">
                   {services[selected].title}
                 </h3>
                 <p className="text-[#444] text-sm sm:text-base md:text-lg mt-4 sm:mt-8 mb-4 sm:mb-8 font-marcellus text-center md:text-left">
