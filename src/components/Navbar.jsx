@@ -23,6 +23,10 @@ const Navbar = () => {
             <Link to="/" onClick={handleNavClick}>
               <img src={logo} alt="Ideago Logo" className="h-12 mr-4" />
             </Link>
+            {/* Mobile Brand Name */}
+            <h2 className="sm:hidden text-xl font-marcellus text-[#2d4661] font-semibold tracking-wide ml-2">
+              Ideago Interiors
+            </h2>
           </div>
           <button
             className="sm:hidden flex items-center text-[#2d4661] text-2xl focus:outline-none"
