@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import client1 from "../../assets/HomeImages/Sahil.jpeg";
 import client2 from "../../assets/HomeImages/AnkurRao.jpeg";
 import client3 from "../../assets/HomeImages/SharadGupta.jpeg";
 import quoteBg from "../../assets/HomeImages/,.svg"; 
+
 const testimonials = [
   {
     name: "Mr. Sahil",
@@ -23,6 +24,7 @@ const testimonials = [
   - Mr. Sharad Gupta.`,
   },
 ];
+
 const Client = () => {
   return (
     <section className="py-16 bg-[#f7f3ef]">
@@ -33,9 +35,12 @@ const Client = () => {
         `}
       </style>
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-12 tracking-wide">
-          CLIENT TESTIMONIALS
+        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-marcellus text-[#2d4661] mb-6 sm:mb-8 tracking-wide">
+          Client Testimonials
         </h2>
+        <p className="text-[#444] text-sm sm:text-base md:text-lg mb-12 font-marcellus text-center max-w-2xl mx-auto">
+          Hear from our clients about their experience with Ideago Interiors. We take pride in delivering thoughtful, functional, and beautiful spaces that truly reflect our clients’ visions.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, idx) => (
             <div
@@ -49,7 +54,7 @@ const Client = () => {
         ${idx === 1 ? "scale-y-[-1]" : ""}`}
                 aria-hidden="true"
               />
-              <p className="relative z-10 text-center text-[#2d3142] font-light mb-8 min-h-48">
+              <p className="relative z-10 text-center text-[#2d3142] font-light mb-8 min-h-48 font-marcellus">
                 {testimonial.text}
               </p>
               <div className="flex flex-col items-center relative z-10 bottom-0 w-full">
@@ -58,7 +63,7 @@ const Client = () => {
                   alt={testimonial.name}
                   className="w-28 h-28 rounded-full border-4 border-white shadow-lg object-cover"
                 />
-                <span className="font-medium text-[#2d3142] mt-2">
+                <span className="font-medium text-[#2d3142] mt-2 font-marcellus">
                   {testimonial.name}
                 </span>
               </div>
