@@ -17,8 +17,8 @@ const Navbar = () => {
       <div className="bg-[#2d4661] text-white py-2 text-center font-semibold text-base tracking-wide fixed top-0 left-0 w-full z-50 ">
         Call Us : +91 8707482268
       </div>
-      <nav className="bg-[#f7f6f4] border-b border-gray-200 px-4 sm:px-10 fixed top-10 left-0 w-full z-50">
-        <div className="relative flex items-center min-h-16">
+      <nav className="bg-[#f7f6f4] border-b border-gray-200 sm:px-10 fixed top-10 left-0 w-full z-50">
+        <div className="relative flex items-center left-0 min-h-16">
           {/* Logo at extreme start */}
           <div className="flex items-center flex-shrink-0 absolute left-0 top-1/2 -translate-y-1/2">
             <Link to="/" onClick={handleNavClick}>
