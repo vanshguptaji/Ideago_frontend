@@ -18,9 +18,9 @@ const Navbar = () => {
         Call Us : +91 8707482268
       </div>
       <nav className="bg-[#f7f6f4] border-b border-gray-200 px-4 sm:px-10 fixed top-10 left-0 w-full z-50">
-        <div className="flex items-center justify-between min-h-16 relative">
+        <div className="relative flex items-center min-h-16">
           {/* Logo at extreme start */}
-          <div className="flex items-center flex-shrink-0">
+          <div className="flex items-center flex-shrink-0 absolute left-0 top-1/2 -translate-y-1/2">
             <Link to="/" onClick={handleNavClick}>
               <img src={logo} alt="Ideago Logo" className="h-12 mr-2" />
             </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
             </h2>
           </div>
           {/* Desktop nav and social icons */}
-          <div className="flex items-center">
+          <div className="flex items-center ml-auto">
             <button
               className="sm:hidden flex items-center text-[#2d4661] text-2xl focus:outline-none"
               onClick={() => setMenuOpen((prev) => !prev)}
