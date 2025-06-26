@@ -17,12 +17,12 @@ const Navbar = () => {
       <div className="bg-[#2d4661] text-white py-2 text-center font-semibold text-base tracking-wide fixed top-0 left-0 w-full z-50 ">
         Call Us : +91 8707482268
       </div>
-      <nav className="bg-[#f7f6f4] border-b border-gray-200 px-4 sm:px-10 fixed top-10 left-0 w-full z-50">
+      <nav className="bg-[#f7f6f4] border-b border-gray-200 sm:px-10 fixed top-10 left-0 w-full z-50">
         <div className="relative flex items-center left-0 min-h-16">
           {/* Logo at extreme start */}
           <div className="flex items-center flex-shrink-0 absolute left-0 top-1/2 -translate-y-1/2">
             <Link to="/" onClick={handleNavClick}>
-              <img src={logo} alt="Ideago Logo" className="h-12" />
+              <img src={logo} alt="Ideago Logo" className="h-12 mr-2" />
             </Link>
           </div>
           {/* Mobile Brand Name at center */}
@@ -32,7 +32,7 @@ const Navbar = () => {
             </h2>
           </div>
           {/* Desktop nav and social icons */}
-          <div className="flex items-center ml-auto">
+          <div className="flex items-center ml-auto mr-4">
             <button
               className="sm:hidden flex items-center text-[#2d4661] text-2xl focus:outline-none"
               onClick={() => setMenuOpen((prev) => !prev)}
