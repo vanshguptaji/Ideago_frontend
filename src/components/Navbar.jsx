@@ -32,7 +32,7 @@ const Navbar = () => {
             </h2>
           </div>
           {/* Desktop nav and social icons */}
-          <div className="flex items-center ml-auto mr-4">
+          <div className="flex items-center ml-auto mr-12">
             <button
               className="sm:hidden flex items-center text-[#2d4661] text-2xl focus:outline-none"
               onClick={() => setMenuOpen((prev) => !prev)}
@@ -40,7 +40,7 @@ const Navbar = () => {
             >
               <i className="fas fa-bars"></i>
             </button>
-            <ul className="hidden sm:flex items-center space-x-8 font-medium text-[1.05rem]">
+            <ul className="hidden sm:flex items-center space-x-8 font-medium text-[1.05rem] mr-76">
               <li>
                 <Link
                   to="/"
