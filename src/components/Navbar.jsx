@@ -105,6 +105,14 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="hidden sm:flex items-center space-x-4 text-[#2d4661]">
+              <Link
+                to="/login"
+                onClick={handleNavClick}
+                className="hover:text-[#1e3347] transition-colors duration-200"
+                title="Login"
+              >
+                <i className="fas fa-user text-lg"></i>
+              </Link>
               <a
                 href="https://www.instagram.com/ideagointeriorsvaranasi/"
                 target="_blank"
@@ -197,6 +205,14 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="flex items-center space-x-4 text-[#2d4661] mt-4">
+              <Link
+                to="/login"
+                onClick={handleNavClick}
+                className="hover:text-[#1e3347] transition-colors duration-200"
+                title="Login"
+              >
+                <i className="fas fa-user text-lg"></i>
+              </Link>
               <a
                 href="https://www.instagram.com/ideagointeriorsvaranasi/"
                 target="_blank"

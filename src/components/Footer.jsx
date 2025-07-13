@@ -8,6 +8,7 @@ const links = [
   { name: "Kitchen", path: "/kitchen" },
   { name: "About Us", path: "/aboutus" },
   { name: "Contact Us", path: "/contactus" },
+  { name: "Admin Site", path: "https://sweet-beignet-163f12.netlify.app/", isButton: true },
 ];
 
 const Footer = () => {
@@ -33,16 +34,25 @@ const Footer = () => {
             <ul className="space-y-3 text-[#37475a] font-medium">
               {links.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.path}
-                    className={
-                      location.pathname === link.path
-                        ? "font-bold underline underline-offset-2"
-                        : ""
-                    }
-                  >
-                    {link.name}
-                  </a>
+                  {link.isButton ? (
+                    <button
+                      onClick={() => window.open(link.path, '_blank')}
+                      className="bg-[#37475a] text-white px-4 py-2 font-semibold hover:bg-[#2d3e4f] transition-colors duration-200 rounded"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <a
+                      href={link.path}
+                      className={
+                        location.pathname === link.path
+                          ? "font-bold underline underline-offset-2"
+                          : ""
+                      }
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

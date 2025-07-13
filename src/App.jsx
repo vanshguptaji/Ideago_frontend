@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import OurProjects from "./pages/OurProjects";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
 import Footer from "./components/Footer";
 import hero1 from "./assets/HomeImages/hero.svg";
 import hero2 from "./assets/HomeImages/hero2.svg";
@@ -94,6 +96,8 @@ function App() {
         <Route path="/projects" element={<OurProjects />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
         <Route path="/kitchen" element={<Redirect />} />
       </Routes>
       <Footer />
