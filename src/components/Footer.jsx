@@ -8,7 +8,7 @@ const links = [
   { name: "Kitchen", path: "/kitchen" },
   { name: "About Us", path: "/aboutus" },
   { name: "Contact Us", path: "/contactus" },
-  { name: "Admin Site", path: "https://gleeful-beignet-cb5221.netlify.app/", isButton: true },
+  { name: "Admin Site", path: "https://peaceful-sunflower-25022f.netlify.app", isButton: true },
 ];
 
 const Footer = () => {
