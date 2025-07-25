@@ -8,7 +8,7 @@ const links = [
   { name: "Kitchen", path: "/kitchen" },
   { name: "About Us", path: "/aboutus" },
   { name: "Contact Us", path: "/contactus" },
-  { name: "Admin Site", path: "https://symphonious-moonbeam-5e70cc.netlify.app", isButton: true },
+  { name: "Admin Site", path: "https://glistening-rabanadas-41c824.netlify.app", isButton: true },
 ];
 
 const Footer = () => {
